@@ -1,9 +1,10 @@
 import requests
+import sys
 
 payload = {'nTqm': '',
            'lang': 'ru'}
 
-cities = ['London', 'svo', 'Cherepovets']
+cities = [sys.argv[1]]
 
 for city in cities:
     url_template = 'http://wttr.in/{}'
